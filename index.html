@@ -9,21 +9,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/cosmo/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Title</title>
+    <title>DINTRA - Traducción Dinámica</title>
 </head>
 
 <body id="mybody">
 
     <!-- NAVEGACION -->
-    <div class="jumbotron jumbotron-fluid" id="jumb-navegacion">
+    <div class="jumbotron jumbotron-fluid jumb-navegacion" id="">
         <div class="container">
-            <h1 class="display-3">DINTRA</h1>
-            <p class="lead">Traducción Dinámica</p>
+
+            <div class="row">
+                <img class="mr-2" style="align-self: center;" width="70px" height="68px" src="C:\Users\Sheep\Documents\Projects\DINTRA\assets\images\DINTRA1.png" alt="">
+                <h1 class="display-3" id="titulo_dintra">DINTRA</h1>
+                <p class="lead ml-4" style="align-self: flex-end;" id="subtitulo_dintra">Traducción Dinámica</p>
+            </div>
+
             <hr class="my-2">
-            <nav class="navbar navbar-expand navbar-light bg-transparent sticky">
+            <nav class="navbar navbar-expand navbar-light bg-transparent sticky menu-navegacion">
                 <ul class="nav navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="portafolio.html">PORTAFOLIO</a>
@@ -35,32 +40,205 @@
             </nav>
         </div>
     </div>
-    <!-- NAVEGACION -->
+    <!-- FIN NAVEGACION -->
 
+    <!-- CONTAINER PAGINA -->
     <div class="container-fluid">
-        <div class="card text-left" style="border-radius: 20px;">
-            <div class="card-body">
-                <h4 class="card-title">Más que traductores</h4>
 
-                <div class="col-md-6">
-                    <p>
-                        Somos una iniciativa que nace de la pasión por la labor traductora.
-                    </p>
+        <div class="row">
+            <!-- CARD DESCRIPCION -->
+            <div class="col-5 col-lg-5 col-sm-12 col-md-12 mb-4">
 
+                <div class="card text-left mb-4 card-hover" style="border-radius: 20px;">
+                    <div class="card-body" onmouseover="mostrar_card1()">
+                        <h3 class="card-title">Más que traductores</h3>
+                        <hr>
+
+                        <div class="col-12 mb-4" id="card-hover-body1" style="display: none;">
+                            <h4>
+                                Somos una iniciativa que nace de la pasión por la labor traductora
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse enim qui ab, laboriosam
+                                obcaecati
+                                deleniti delectus fugit magni? Veniam doloremque, consectetur impedit voluptate eveniet
+                                ipsam et
+                                magnam dolore ad repudiandae! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Non
+                                veniam, blanditiis expedita, placeat rerum cupiditate laboriosam perferendis ratione
+                                dolorum
+                                quis architecto soluta nesciunt! Aliquam neque at ullam omnis tenetur cupiditate.
+                            </p>
+
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="card text-left mb-4" style="border-radius: 20px;">
+                    <div class="card-body"  onmouseover="mostrar_card2()">
+                        <h3 class="card-title">Un equipo multidisciplinario</h3>
+                        <hr>
 
+                        <div class="col-12 mb-4" id="card-hover-body2" style="display: none;">
+                            <h4>
+                                Diversidad de experiencias y conocimiento
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse enim qui ab, laboriosam
+                                obcaecati
+                                deleniti delectus fugit magni? Veniam doloremque, consectetur impedit voluptate eveniet
+                                ipsam et
+                                magnam dolore ad repudiandae! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Non
+                                veniam, blanditiis expedita, placeat rerum cupiditate laboriosam perferendis ratione
+                                dolorum
+                                quis architecto soluta nesciunt! Aliquam neque at ullam omnis tenetur cupiditate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card text-left mb-4" style="border-radius: 20px;" onmouseover="mostrar_card3()">
+                    <div class="card-body">
+                        <h3 class="card-title" >Un trabajo de calidad</h3>
+                        <hr>
+
+                        <div class="col-12 mb-4" id="card-hover-body3" style="display: none;">
+                            <h4>
+                                Experiencia profesional
+                            </h4>
+                            <p>
+                                DINTRA cuenta con más de 5 años de experiencia profesional entre sus integrantes. Desde
+                                la traducción
+                                de documentos para su publicación en revistas científicas, hasta traducciones de páginas
+                                web, nuestro equipo es capaz
+                                de trasladar el mensaje de forma íntegra, <b>sea cual sea el medio</b>.
+                            </p>
+                            <h4>
+                                Constante evolución
+                            </h4>
+                            <p>
+                                La metodología de trabajo que utilizamos se adapta según las necesidades del cliente;
+                                cada integrante del equipo es capaz de
+                                cumplir el rol de editor, revisor, traductor, e intérprete. Hemos adoptado mecanismos de
+                                trabajo de distintos rubros para conseguir
+                                una ejecución dinámica, en la que el equipo distribuye sus roles y tareas dentro de una
+                                o mas iteraciones.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- FORMULARIO CONTACTO -->
+                <div class="card text-left" style="border-radius: 20px;">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-11">
+                                <h3 class="card-title" style="cursor: pointer;" onclick="mostrar_formulario()">
+                                    Formulario de contacto</h3>
+                            </div>
+                            <div class="col-1">
+                                <i class="fa fa-chevron-down" style="align-self: center; cursor: pointer;"
+                                    aria-hidden="true" id="#chevron_formulario" onclick="mostrar_formulario()"></i>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="form-group" id="items_formulario_contacto" style="display: none;">
+                            <label for="my-input">NOMBRE:</label>
+                            <input id="my-input" class="form-control mb-4" type="text" name="nombre"
+                                placeholder="Ingrese...">
+
+                            <label for="my-input">SERVICIO REQUERIDO:</label>
+                            <select class="form-control mb-4" name="" id="">
+                                <option>TRADUCCIÓN ING-ESP</option>
+                                <option>TRADUCCIÓN ESP-ING</option>
+                                <option>REVISIÓN DE TEXTO</option>
+                                <option>EDICIÓN DE TEXTO</option>
+                                <option>CONSULTAS</option>
+                            </select>
+
+                            <label for="my-input">DESCRIPCION:</label>
+                            <input id="my-input" class="form-control mb-4" type="text" name="nombre"
+                                placeholder="Ingrese descripción de la solicitud...">
+
+                            <label for="my-input">ARCHIVO:</label>
+                            <div class="form-group">
+                                <input id="my-input" class="form-control-file" type="file" name="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOG PREVIEW -->
+            <div class="col-7 col-lg-7 col-sm-12 col-md-12 mb-4">
+                <div class="card text-left" style="border-radius: 20px;">
+                    <div class="card-body">
+                        <h3 class="card-title">Nuestro Blog - TRADUTOPIA</h3>
+                        <HR>
+
+                        <iframe src="https://tradutopia.blogspot.com/" width="100%" height="800px">
+                            <p>Your browser does not support iFrames.</p>
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
+    <!-- FIN CONTAINER PAGINA-->
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+
+        function mostrar_card1() {
+            var carta = document.getElementById("card-hover-body1");
+
+            if (carta.style.display === "none") {
+                carta.style.display = "block";
+            } else {
+                carta.style.display = "none";
+            }
+        }
+
+        function mostrar_card2() {
+            var carta = document.getElementById("card-hover-body2");
+
+            if (carta.style.display === "none") {
+                carta.style.display = "block";
+            } else {
+                carta.style.display = "none";
+            }
+        }
+
+        function mostrar_card3() {
+            var carta = document.getElementById("card-hover-body3");
+
+            if (carta.style.display === "none") {
+                carta.style.display = "block";
+            } else {
+                carta.style.display = "none";
+            }
+        }
+
+        function mostrar_formulario() {
+            var element = document.getElementById("items_formulario_contacto");
+
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -3,23 +3,94 @@
     padding: 0 !important;
 }
 
-#jumb-navegacion{
+.jumb-navegacion{
+    height: 150px;
     background-color: white;
     opacity: 100%;
     padding: 2em !important;
-    transition: 2s;
-}
-
-#jumb-navegacion:hover{
-    opacity: 100%;
-}
-
-.btn-navegacion{
-    opacity: 100%;
     transition: 1s;
 }
 
-.btn-nagevacion:hover{
+.jumb-navegacion .menu-navegacion{
     opacity: 0%;
-    color: blue;
+    transition: 0.6s;
+}
+
+.jumb-navegacion:hover{
+    opacity: 100%;
+    height: 200px;
+}
+
+.jumb-navegacion:hover .menu-navegacion{
+    opacity: 100%;
+}
+
+.card-hover{
+    border-radius: 1px;
+}
+
+
+/* MARGINS */
+.mb-0{
+    margin-bottom: 0px !important;
+}
+
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+.mb-4{
+    margin-bottom: 4rem;
+}
+
+.mb-6{
+    margin-bottom: 6rem;
+}
+
+.mt-0{
+    margin-top: 0px !important;
+}
+
+.mt-2{
+    margin-top: 2rem;
+}
+
+.mt-4{
+    margin-top: 4rem;
+}
+
+.mt-6{
+    margin-top: 6rem;
+}
+
+.ml-0{
+    margin-left: 0px !important;
+}
+
+.ml-2{
+    margin-left: 2rem;
+}
+
+.ml-4{
+    margin-left: 4rem;
+}
+
+.ml-6{
+    margin-left: 6rem;
+}
+
+.mr-0{
+    margin-right: 0px !important;
+}
+
+.mr-2{
+    margin-right: 2rem;
+}
+
+.mr-4{
+    margin-right: 4rem;
+}
+
+.mr-6{
+    margin-right: 6rem;
 }
