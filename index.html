@@ -19,25 +19,13 @@
         <div class="container">
 
             <div class="row">
-                <img class="mr-2" style="align-self: center;" width="70px" height="68px" src="C:\Users\Sheep\Documents\Projects\DINTRA\assets\images\DINTRA1.png" alt="">
+                <img class="mr-2" style="align-self: center; z-index: 3;" width="70px" height="68px"
+                    src="C:\Users\Sheep\Documents\Projects\DINTRA\assets\images\DINTRA1.png" alt="">
                 <h1 class="display-3" id="titulo_dintra">DINTRA</h1>
-                <p class="lead ml-4" style="align-self: flex-end;" id="subtitulo_dintra">Traducción Dinámica</p>
+                <p class="lead ml-4" style="align-self: flex-end; text-align: center;" id="subtitulo_dintra">Traducción Dinámica</p>
             </div>
 
             <hr class="my-2">
-            <nav class="navbar navbar-expand navbar-light bg-transparent sticky menu-navegacion">
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portafolio.html">PORTAFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">SOBRE NOSOTROS</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </div>
     <!-- FIN NAVEGACION -->
@@ -46,61 +34,80 @@
     <div class="container-fluid">
 
         <div class="row">
-            <!-- CARD DESCRIPCION -->
+            <!-- COLUMNA 1 -->
             <div class="col-12 col-lg-5 col-sm-12 col-md-12 mb-4">
 
+                <!--CARTA DESCRIPCION-->
                 <div class="card text-left mb-4 card-hover" style="border-radius: 20px;">
-                    <div class="card-body" onmouseover="mostrar_card1()">
+                    <div class="card-body" onclick="mostrar_card1()">
                         <h3 class="card-title">Más que traductores</h3>
                         <hr>
 
-                        <div class="col-12 mb-4" id="card-hover-body1" style="display: none;">
+                        <div class="col-12 mb-4" id="card-hover-body1" style="display: block;">
                             <h4>
                                 Somos una iniciativa que nace de la pasión por la labor traductora
                             </h4>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse enim qui ab, laboriosam
-                                obcaecati
-                                deleniti delectus fugit magni? Veniam doloremque, consectetur impedit voluptate eveniet
-                                ipsam et
-                                magnam dolore ad repudiandae! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Non
-                                veniam, blanditiis expedita, placeat rerum cupiditate laboriosam perferendis ratione
-                                dolorum
-                                quis architecto soluta nesciunt! Aliquam neque at ullam omnis tenetur cupiditate.
+                                DINTRA cuenta con más de 5 años de experiencia profesional entre sus integrantes. Desde
+                                la traducción
+                                de documentos para su publicación en revistas científicas, hasta traducciones de páginas
+                                web, nuestro equipo es capaz
+                                de trasladar el mensaje de forma íntegra, sea cual sea el medio.
                             </p>
 
                         </div>
                     </div>
                 </div>
 
+                <!--CARTA SERVICIOS-->
                 <div class="card text-left mb-4" style="border-radius: 20px;">
-                    <div class="card-body"  onmouseover="mostrar_card2()">
-                        <h3 class="card-title">Un equipo multidisciplinario</h3>
+                    <div class="card-body" onclick="mostrar_card2()">
+                        <h3 class="card-title">Nuestros servicios</h3>
                         <hr>
 
                         <div class="col-12 mb-4" id="card-hover-body2" style="display: none;">
                             <h4>
-                                Diversidad de experiencias y conocimiento
                             </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse enim qui ab, laboriosam
-                                obcaecati
-                                deleniti delectus fugit magni? Veniam doloremque, consectetur impedit voluptate eveniet
-                                ipsam et
-                                magnam dolore ad repudiandae! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Non
-                                veniam, blanditiis expedita, placeat rerum cupiditate laboriosam perferendis ratione
-                                dolorum
-                                quis architecto soluta nesciunt! Aliquam neque at ullam omnis tenetur cupiditate.
-                            </p>
+                            <!--Grilla de servicios-->
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Servicio</th>
+                                        <th>Valor palabra</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">Traducción ING-ESP</td>
+                                        <td>CLP 25</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Traducción ESP-ING</td>
+                                        <td>CLP 30</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Transcripción</td>
+                                        <td>CLP 30</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Revisión</td>
+                                        <td>CLP 15</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">Edición</td>
+                                        <td>CLP 20</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
                         </div>
                     </div>
                 </div>
 
-                <div class="card text-left mb-4" style="border-radius: 20px;" onmouseover="mostrar_card3()">
+                <div class="card text-left mb-4" style="border-radius: 20px;" onclick="mostrar_card3()">
                     <div class="card-body">
-                        <h3 class="card-title" >Un trabajo de calidad</h3>
+                        <h3 class="card-title">Un trabajo de calidad</h3>
                         <hr>
 
                         <div class="col-12 mb-4" id="card-hover-body3" style="display: none;">
@@ -132,16 +139,16 @@
 
                 <!-- FORMULARIO CONTACTO -->
                 <div class="card text-left" style="border-radius: 20px;">
-                    <div class="card-body">
+                    <div class="card-body" onclick="mostrar_formulario()">
 
                         <div class="row">
                             <div class="col-11">
-                                <h3 class="card-title" style="cursor: pointer;" onclick="mostrar_formulario()">
+                                <h3 class="card-title" style="cursor: pointer;">
                                     Formulario de contacto</h3>
                             </div>
                             <div class="col-1">
                                 <i class="fa fa-chevron-down" style="align-self: center; cursor: pointer;"
-                                    aria-hidden="true" id="#chevron_formulario" onclick="mostrar_formulario()"></i>
+                                    aria-hidden="true" id="chevron_formulario"></i>
                             </div>
                         </div>
 
@@ -181,7 +188,7 @@
                         <h3 class="card-title">Nuestro Blog - TRADUTOPIA</h3>
                         <HR>
 
-                        <iframe src="https://tradutopi.blogspot.com/" width="100%" height="800px">
+                        <iframe src="https://tradutopia.blogspot.com/?m=1" width="100%" height="800px">
                             <p>Your browser does not support iFrames.</p>
                         </iframe>
                     </div>
@@ -231,12 +238,21 @@
 
         function mostrar_formulario() {
             var element = document.getElementById("items_formulario_contacto");
+            var chevron = document.getElementById("chevron_formulario");
 
             if (element.style.display === "none") {
                 element.style.display = "block";
             } else {
                 element.style.display = "none";
             }
+
+            if (chevron.classList.contains('fa-chevron-down')){
+                chevron.classList.replace('fa-chevron-down', 'fa-chevron-up');
+            } else {
+                chevron.classList.replace('fa-chevron-up', 'fa-chevron-down');
+            }
+
+
         }
     </script>
 </body>

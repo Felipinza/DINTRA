@@ -4,9 +4,9 @@
 }
 
 .jumb-navegacion{
-    height: 150px;
+    height: 100%;
     background-color: white;
-    opacity: 100%;
+    opacity: 90%;
     padding: 2em !important;
     transition: 1s;
 }
@@ -18,7 +18,6 @@
 
 .jumb-navegacion:hover{
     opacity: 100%;
-    height: 200px;
 }
 
 .jumb-navegacion:hover .menu-navegacion{
