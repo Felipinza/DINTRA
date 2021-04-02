@@ -1,0 +1,25 @@
+#mybody{
+    background-color: orange;
+    padding: 0 !important;
+}
+
+#jumb-navegacion{
+    background-color: white;
+    opacity: 100%;
+    padding: 2em !important;
+    transition: 2s;
+}
+
+#jumb-navegacion:hover{
+    opacity: 100%;
+}
+
+.btn-navegacion{
+    opacity: 100%;
+    transition: 1s;
+}
+
+.btn-nagevacion:hover{
+    opacity: 0%;
+    color: blue;
+}
